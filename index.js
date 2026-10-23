@@ -5,7 +5,7 @@ const groq = new Groq({ apiKey: process.env.GROQ_KEY })
 const prices = { SAR: 1600, USD: 6000, AED: 1650, EGP: 120, QAR: 1650 }
 
 async function startBot() {
-  const { state, saveCreds } = await useMultiFileAuthState('auth')
+  const { state, saveCreds } = await useMultiFileAuthState('auth2')
   const sock = makeWASocket({ 
     auth: state, 
     printQRInTerminal: false,
